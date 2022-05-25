@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <p hidden id="memoria">nada</p>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button id="backspace" style="background-color: #111B4E" class="botao"
+                            onclick="limparMemoria()">mc</button></td>
+                    <td><button class="botao" style="background-color: #111B4E" onclick="somarMemoria()">m+</button>
+                    </td>
+                    <td><button class="botao" style="background-color: #111B4E" onclick="subtrairMemoria()">m-</button>
+                    </td>
+                    <td><button class="botao" style="background-color: #111B4E" onclick="pegarMemoria()">mr</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="limparCalculo" style="background-color: #993559" class="botao"
+                            onclick="limpar()">C</button></td>
+                    <td><button class="botao" style="background-color: #212947" onclick="inserir('**')">POT</button></td>
+                    <td><button class="botao" style="background-color: #212947" onclick="arredondar()">ARR</button></td>
+                    <td><button class="botao" style="background-color: #212947" onclick="raiz()">√</button></td>
+                </tr>
+                <tr>
+                    <td><button id="abre" class="botao" style="background-color: #2D57C0"
+                            onclick="inserir('(')">(</button></td>
+                    <td><button id="fecha" class="botao" style="background-color: #2D57C0"
+                            onclick="inserir(')')">)</button></td>
+                    <td><button id="operadorDividir" class="botao" style="background-color: #2D57C0"
+                            onclick="inserir('/')">÷</button></td>
+                    <td><button id="operadorMultiplicar" class="botao" style="background-color: #2D57C0"
+                            onclick="inserir('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="tecla7" class="botao" onclick="inserir('7')">7</button></td>
+                    <td><button id="tecla8" class="botao" onclick="inserir('8')">8</button></td>
+                    <td><button id="tecla9" class="botao" onclick="inserir('9')">9</button></td>
+                    <td><button id="operadorSubtrair" class="botao" style="background-color: #C8224B"
+                            onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="tecla4" class="botao" onclick="inserir('4')">4</button></td>
+                    <td><button id="tecla5" class="botao" onclick="inserir('5')">5</button></td>
+                    <td><button id="tecla6" class="botao" onclick="inserir('6')">6</button></td>
+                    <td><button id="operadorSomar" class="botao" style="background-color: #2D57C0"
+                            onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="tecla1" class="botao" onclick="inserir('1')">1</button></td>
+                    <td><button id="tecla2" class="botao" onclick="inserir('2')">2</button></td>
+                    <td><button id="tecla3" class="botao" onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button id="igual" class="botao"
+                            style="height: 106px; background-color:rgb(64, 197, 93);" onclick="calcular()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="tecla0" class="botao" style="width: 106px;"
+                            onclick="inserir('0')">0</button></td>
+                    <td><button id="decimal" class="botao" onclick="inserir('.')">,</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
