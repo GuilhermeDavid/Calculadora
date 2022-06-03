@@ -39,6 +39,11 @@
     color: black;
 }
 
+@font-face {
+    font-family: digital7;
+    src: url(fonts/digital-7.ttf) format('truetype'); 
+}
+
 #resultado {
     background-color: rgb(143, 170, 80);
     width: 214px;
@@ -52,5 +57,5 @@
     border: rgb(0, 0, 0);
     border-style: ridge;
     border-radius: 6px;
-
+    font-family: digital7;
 }
